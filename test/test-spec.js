@@ -17,7 +17,7 @@ describe('Item', function(){
   });
 });
 
-describe('Weapon', function(){2
+describe('Weapon', function(){
   var dagger;
 
   beforeEach(function () {
@@ -62,13 +62,13 @@ describe('Food', function(){
     apple.name.should.equal('apple');
   });
 
-})
+});
 
 describe('Player', function(){
   var player;
 
   beforeEach(function(){
-   player = new zombies.Player('Greg',100,20,20);
+  player = new zombies.Player('Greg',100,20,20);
   });
 
   it('should be a class', function(){
@@ -83,7 +83,8 @@ describe('Player', function(){
     player.should.have.property('_maxHealth');
     player.should.have.property('isAlive');
   });
-describe('Properties',function(){
+
+  describe('Properties',function(){
 
   it('pack should be an array',function(){
     player._pack.should.be.a('array');
@@ -100,9 +101,11 @@ describe('Properties',function(){
     player.useItem.should.not.be.undefined;
     player.equippedWith.should.not.be.undefined;
   });
-});
+  
+  });
 
-describe('Methods',function(){
+
+  describe('Methods',function(){
 
   it('takeItem should return false if unable to put item in bag',function(){
   var item1 = new zombies.Item('shovel');
@@ -182,4 +185,7 @@ describe('Methods',function(){
   var axe = new zombies.Weapon('axe',20);
   player.eat(axe).should.be.false;
   });
+});
+ 
+});
 });
