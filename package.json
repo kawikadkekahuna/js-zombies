@@ -1,0 +1,29 @@
+{
+  "name": "js-zombies",
+  "version": "1.0.0",
+  "description": "1. Navigate to this project in your terminal. 2. Run `http-server`. 3. Open [http://localhost:8080](http://localhost:8080) in Chrome.  *You should see failing tests.* 4. Complete the exercise by following the comments in `zombies.js` or the README.",
+  "main": "zombies.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawikadkekahuna/js-zombies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kawikadkekahuna/js-zombies/issues"
+  },
+  "homepage": "https://github.com/kawikadkekahuna/js-zombies#readme",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "chai": "^3.0.0"
+  }
+}

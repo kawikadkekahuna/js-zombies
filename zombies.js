@@ -255,6 +255,8 @@ Object.create(Item.prototype, {
     if(this.health> this._maxHealth){
       this.health = this._maxHealth;
     }
+ }else{
+  return false;
  }
 }
 /**
@@ -499,4 +501,17 @@ function runGame() {
   // player.useItem(sandwich);
   // console.log("After health: " + player.health);
   // player.checkPack();
+}
+
+module.exports = {
+
+  Item: Item,
+  Weapon: Weapon,
+  Food: Food,
+  Player: Player,
+  Zombie: Zombie,
+  FastZombie: FastZombie,
+  StrongZombie: StrongZombie,
+  RangedZombie: RangedZombie,
+  ExplodingZombie: ExplodingZombie
 }
